@@ -180,7 +180,7 @@ git push origin main
 
 # <font color="#ff7675">📬 Connect With Me</font>
 
-👨‍💻 **Kazi**
+👨‍💻 **Kazi Mustafijur Rahaman**
 💻 Frontend & Programming Learner
 🚀 Building skills in Web Development & Programming
 
