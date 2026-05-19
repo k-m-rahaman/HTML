@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+        }
+
+        .register-box{
+
+            width: 400px;
+
+            background: rgba(255,255,255,0.1);
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            backdrop-filter: blur(10px);
+
+            color: white;
+
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .register-box h1{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .input-box{
+            margin-bottom: 20px;
+        }
+
+        .input-box label{
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .input-box input{
+
+            width: 100%;
+
+            padding: 12px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            outline: none;
+        }
+
+        .btn{
+
+            width: 100%;
+
+            padding: 12px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #38bdf8;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+
+            background: #0ea5e9;
+
+            transform: scale(1.03);
+        }
+
+        .login-link{
+
+            text-align: center;
+
+            margin-top: 20px;
+        }
+
+        .login-link a{
+
+            color: #facc15;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+        .login-link a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="register-box">
+
+        <h1>Create Account</h1>
+
+        <form>
+
+            <div class="input-box">
+
+                <label>Full Name</label>
+
+                <input type="text" placeholder="Enter your name">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Email</label>
+
+                <input type="email" placeholder="Enter your email">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Password</label>
+
+                <input type="password" placeholder="Create password">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Confirm Password</label>
+
+                <input type="password" placeholder="Confirm password">
+
+            </div>
+
+            <button class="btn">Register</button>
+
+        </form>
+
+        <div class="login-link">
+
+            <p>
+                Already have an account?
+                <a href="#">Login</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
