@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: #0f0f0f;
+            color: white;
+        }
+
+        header{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 30px;
+
+            background: #202020;
+
+            position: sticky;
+            top: 0;
+        }
+
+        .logo{
+            font-size: 28px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .search-box{
+
+            width: 40%;
+
+            display: flex;
+        }
+
+        .search-box input{
+
+            width: 100%;
+
+            padding: 10px;
+
+            border: none;
+
+            border-radius: 20px 0 0 20px;
+
+            outline: none;
+        }
+
+        .search-box button{
+
+            padding: 10px 20px;
+
+            border: none;
+
+            background: red;
+
+            color: white;
+
+            border-radius: 0 20px 20px 0;
+
+            cursor: pointer;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .sidebar{
+
+            width: 220px;
+
+            background: #181818;
+
+            height: 100vh;
+
+            padding: 20px;
+        }
+
+        .sidebar ul{
+            list-style: none;
+        }
+
+        .sidebar ul li{
+
+            padding: 15px;
+
+            border-radius: 10px;
+
+            margin-bottom: 10px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .sidebar ul li:hover{
+            background: #303030;
+        }
+
+        .videos{
+
+            flex: 1;
+
+            padding: 30px;
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 20px;
+        }
+
+        .video-card{
+
+            background: #181818;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            transition: 0.3s;
+        }
+
+        .video-card:hover{
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 0 15px rgba(255,0,0,0.4);
+        }
+
+        .thumbnail{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .video-info{
+            padding: 15px;
+        }
+
+        .video-info h3{
+            margin-bottom: 10px;
+        }
+
+        .video-info p{
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">YouTube</div>
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search">
+
+            <button>Search</button>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <ul>
+
+                <li>🏠 Home</li>
+                <li>🔥 Trending</li>
+                <li>🎵 Music</li>
+                <li>🎮 Gaming</li>
+                <li>📚 Learning</li>
+                <li>⚙ Settings</li>
+
+            </ul>
+
+        </div>
+
+        <div class="videos">
+
+            <div class="video-card">
+
+                <img 
+                    src="https://via.placeholder.com/400x200"
+                    class="thumbnail"
+                >
+
+                <div class="video-info">
+
+                    <h3>Learn HTML Full Course</h3>
+
+                    <p>Kazi Tech • 1M views • 2 days ago</p>
+
+                </div>
+
+            </div>
+
+            <div class="video-card">
+
+                <img 
+                    src="https://via.placeholder.com/400x200"
+                    class="thumbnail"
+                >
+
+                <div class="video-info">
+
+                    <h3>Python Programming Tutorial</h3>
+
+                    <p>Code Academy • 500K views • 1 week ago</p>
+
+                </div>
+
+            </div>
+
+            <div class="video-card">
+
+                <img 
+                    src="https://via.placeholder.com/400x200"
+                    class="thumbnail"
+                >
+
+                <div class="video-info">
+
+                    <h3>DSA for Beginners</h3>
+
+                    <p>Programming Hub • 750K views • 3 days ago</p>
+
+                </div>
+
+            </div>
+
+            <div class="video-card">
+
+                <img 
+                    src="https://via.placeholder.com/400x200"
+                    class="thumbnail"
+                >
+
+                <div class="video-info">
+
+                    <h3>AI & Machine Learning Basics</h3>
+
+                    <p>AI World • 300K views • 5 days ago</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
